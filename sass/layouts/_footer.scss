@@ -1,0 +1,38 @@
+.footer {
+  background-color: var(--color-background-dark);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--color-text-w);
+  margin-bottom: 20px;
+}
+
+.footer__contacs {
+  font-style: normal;
+  margin-top: 20px;
+}
+
+.footer__link {
+  font-size: 14px;
+  line-height: 1.714;
+  color: rgba(255, 255, 255, 0.6);
+
+  &--white {
+    color: var(--color-text-w);
+  }
+}
+
+.footer__item {
+  --grid-item: 4;
+
+  &:last-child {
+    flex-basis: auto;
+    flex-grow: 1;
+  }
+}

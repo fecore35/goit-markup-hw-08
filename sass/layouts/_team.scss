@@ -1,0 +1,38 @@
+.team {
+  background-color: var(--color-background-btn);
+}
+
+.team__grid {
+  text-align: center;
+}
+
+.team__item {
+  --grid-item: 4;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team__info {
+  padding: 30px 24px;
+}
+
+.team__member {
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.team__member,
+.team__member-position {
+  line-height: 1.18;
+}
+
+.team__member-position {
+  margin: 0;
+}
+
+.member__social-list {
+  justify-content: center;
+  margin-top: 16px;
+}

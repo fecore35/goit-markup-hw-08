@@ -1,0 +1,15 @@
+.social-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #afb1b8;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition-property: color, background-color;
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-accent);
+    color: var(--color-text-w);
+  }
+}

@@ -1,0 +1,34 @@
+.form-subscription {
+  display: flex;
+}
+
+.form-subscription__input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  flex-grow: 1;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: transparent;
+  color: var(--color-text-w);
+
+  &::placeholder {
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.form-subscription__btn {
+  margin-left: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.form-subscription__icon {
+  margin-right: 0;
+  margin-left: 10px;
+  transition-property: transform;
+
+  .form-subscription__btn:hover & {
+    transform: rotate(15deg);
+  }
+}

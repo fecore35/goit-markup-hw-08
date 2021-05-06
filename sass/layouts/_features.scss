@@ -1,0 +1,40 @@
+.features {
+  padding-top: var(--padding-section);
+}
+
+.features__item {
+  --grid-item: 4;
+}
+
+.features__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-text);
+  margin-bottom: 10px;
+}
+
+.features__icon::before {
+  content: '';
+  display: block;
+  height: 120px;
+  background-color: var(--color-background-btn);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+@each $var in antenna, clock, diagram, astronaut {
+  .features__icon-#{$var}::before {
+    background-image: url(../images/features/#{$var}.svg);
+  }
+}
+
+.features__text {
+  font-size: 14px;
+  line-height: 1.714;
+  margin: 0;
+}

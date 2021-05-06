@@ -1,0 +1,18 @@
+.clients__item {
+  --grid-item: 6;
+}
+
+.client__link {
+  display: flex;
+  color: #afb1b8;
+  box-shadow: 0 0 0 1px #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition-property: color, box-shadow;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 0 1px var(--color-accent);
+    color: var(--color-accent);
+  }
+}
