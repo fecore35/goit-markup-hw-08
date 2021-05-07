@@ -1,7 +1,3 @@
-.form-subscription {
-  display: flex;
-}
-
 .form-subscription__input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -30,5 +26,26 @@
 
   .form-subscription__btn:hover & {
     transform: rotate(15deg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-subscription {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .form-subscription__input {
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 50px;
+  }
+
+  .form-subscription__btn {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
   }
 }

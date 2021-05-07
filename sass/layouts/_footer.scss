@@ -11,6 +11,7 @@
   text-transform: uppercase;
   color: var(--color-text-w);
   margin-bottom: 20px;
+  margin-top: 0;
 }
 
 .footer__contacs {
@@ -29,10 +30,38 @@
 }
 
 .footer__item {
-  --grid-item: 4;
-
   &:last-child {
     flex-basis: auto;
     flex-grow: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__item {
+    --grid-item: 2;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__item {
+    --grid-item: 4;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .footer {
+    text-align: center;
+  }
+
+  .footer__grid {
+    margin-top: -60px;
+  }
+
+  .footer__item {
+    margin-top: 60px;
+  }
+
+  .social-list {
+    justify-content: center;
   }
 }

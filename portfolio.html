@@ -35,7 +35,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="contacts list flexbox">
+        <ul class="contacts list">
           <li class="contacts__item">
             <a class="contacts__link link main-animated" href="mailto:info@devstudio.com">
               <svg class="icon icon--start" width="16" height="12">
@@ -53,8 +53,50 @@
             </a>
           </li>
         </ul>
+        <button class="mobile-menu-btn main-animated" data-menu-button="" aria-expanded="false">
+          <svg class="icon" width="40" height="40">
+            <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+            <use class="icon-close" href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
     </header>
+
+    <div class="mobile-menu main-animated" data-menu="">
+      <ul class="menu list">
+        <li class="menu__item">
+          <a href="./index.html" class="menu__link link main-animated">Студия</a>
+        </li>
+        <li class="menu__item">
+          <a href="./portfolio.html" class="menu__link--current menu__link link main-animated">Портфолио</a>
+        </li>
+        <li class="menu__item"><a href="" class="menu__link link main-animated">Контакты</a></li>
+      </ul>
+      <ul class="contacts list">
+        <li class="contacts__item">
+          <a class="contacts__link contacts__link--tel link main-animated" href="tel:+380961111111">
+            +38 096 111 11 11
+          </a>
+        </li>
+        <li class="contacts__item">
+          <a class="contacts__link link main-animated" href="mailto:info@devstudio.com"> info@devstudio.com </a>
+        </li>
+      </ul>
+      <ul class="mobile-menu__social list">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link link" href="" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link link" href="" target="_blank" rel="noopener noreferrer">Twitter</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link link" href="" target="_blank" rel="noopener noreferrer">Facebook</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link link" href="" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
 
     <main>
       <section class="work section">
@@ -82,13 +124,37 @@
               <a class="work__link main-animated" href="">
                 <article>
                   <div class="work__header">
-                    <img
-                      class="image"
-                      src="./images/portfolio/project-1-min.jpg"
-                      width="370"
-                      height="294"
-                      alt="Технокряк"
-                    />
+                    <picture>
+                      <source
+                        srcset="./images/portfolio/project-1-min.jpg 1x, ./images/portfolio/project-9@2-min.jpg 2x"
+                        media="(min-width: 1200px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/project-9-min_tablet.png   1x,
+                          ./images/portfolio/project-9@2-min_tablet.png 2x
+                        "
+                        media="(min-width: 768px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/project-9-min_mobile.jpeg   1x,
+                          ./images/portfolio/project-9@2-min_mobile.jpeg 2x
+                        "
+                        media="(max-width: 767px)"
+                        type="image/jpeg"
+                      />
+
+                      <img
+                        class="image"
+                        src="./images/portfolio/project-1-min.jpg"
+                        width="370"
+                        height="294"
+                        alt="Михаил Ермаков"
+                      />
+                    </picture>
                     <div class="work__overlay main-animated">
                       Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
                       для цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -105,13 +171,37 @@
               <a class="work__link main-animated" href="">
                 <article>
                   <div class="work__header">
-                    <img
-                      class="image"
-                      src="./images/portfolio/project-2-min.jpg"
-                      width="370"
-                      height="294"
-                      alt="Постер New Orlean vs Golden Star"
-                    />
+                    <picture>
+                      <source
+                        srcset="./images/portfolio/project-2-min.jpg 1x, ./images/portfolio/project-1@2-min.jpg 2x"
+                        media="(min-width: 1200px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/project-1-min_tablet.png   1x,
+                          ./images/portfolio/project-1@2-min_tablet.png 2x
+                        "
+                        media="(min-width: 768px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/project-8-min_mobile.jpg    1x,
+                          ./images/portfolio/project-8@2-min_mobile.jpeg 2x
+                        "
+                        media="(max-width: 767px)"
+                        type="image/jpeg"
+                      />
+
+                      <img
+                        class="image"
+                        src="./images/portfolio/project-2-min.jpg"
+                        width="370"
+                        height="294"
+                        alt="Михаил Ермаков"
+                      />
+                    </picture>
                     <div class="work__overlay main-animated">
                       Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
                       для цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -128,13 +218,37 @@
               <a class="work__link main-animated" href="">
                 <article>
                   <div class="work__header">
-                    <img
-                      class="image"
-                      src="./images/portfolio/project-3-min.jpg"
-                      width="370"
-                      height="294"
-                      alt="Ресторан Seafood"
-                    />
+                    <picture>
+                      <source
+                        srcset="./images/portfolio/project-3-min.jpg 1x, ./images/portfolio/project-2@2-min.jpg 2x"
+                        media="(min-width: 1200px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/project-2-min_tablet.png   1x,
+                          ./images/portfolio/project-2@2-min_tablet.png 2x
+                        "
+                        media="(min-width: 768px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/project-1-min_mobile.jpg    1x,
+                          ./images/portfolio/project-7@2-min_mobile.jpeg 2x
+                        "
+                        media="(max-width: 767px)"
+                        type="image/jpeg"
+                      />
+
+                      <img
+                        class="image"
+                        src="./images/portfolio/project-3-min.jpg"
+                        width="370"
+                        height="294"
+                        alt="Михаил Ермаков"
+                      />
+                    </picture>
                     <div class="work__overlay main-animated">
                       Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
                       для цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -151,13 +265,37 @@
               <a class="work__link main-animated" href="">
                 <article>
                   <div class="work__header">
-                    <img
-                      class="image"
-                      src="./images/portfolio/project-4-min.jpg"
-                      width="370"
-                      height="294"
-                      alt="Проект Prime"
-                    />
+                    <picture>
+                      <source
+                        srcset="./images/portfolio/project-4-min.jpg 1x, ./images/portfolio/project-3@2-min.jpg 2x"
+                        media="(min-width: 1200px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/project-3-min_tablet.png   1x,
+                          ./images/portfolio/project-3@2-min_tablet.png 2x
+                        "
+                        media="(min-width: 768px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/project-2-min_mobile.jpg    1x,
+                          ./images/portfolio/project-3@2-min_mobile.jpeg 2x
+                        "
+                        media="(max-width: 767px)"
+                        type="image/jpeg"
+                      />
+
+                      <img
+                        class="image"
+                        src="./images/portfolio/project-4-min.jpg"
+                        width="370"
+                        height="294"
+                        alt="Михаил Ермаков"
+                      />
+                    </picture>
                     <div class="work__overlay main-animated">
                       Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
                       для цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -174,13 +312,37 @@
               <a class="work__link main-animated" href="">
                 <article>
                   <div class="work__header">
-                    <img
-                      class="image"
-                      src="./images/portfolio/project-5-min.jpg"
-                      width="370"
-                      height="294"
-                      alt="Проект Boxes"
-                    />
+                    <picture>
+                      <source
+                        srcset="./images/portfolio/project-5-min.jpg 1x, ./images/portfolio/project-4@2-min.jpg 2x"
+                        media="(min-width: 1200px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/project-4-min_tablet.png   1x,
+                          ./images/portfolio/project-4@2-min_tablet.png 2x
+                        "
+                        media="(min-width: 768px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/project-3-min_mobile.jpg   1x,
+                          ./images/portfolio/project-2@2-min_mobile.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                        type="image/jpeg"
+                      />
+
+                      <img
+                        class="image"
+                        src="./images/portfolio/project-5-min.jpg"
+                        width="370"
+                        height="294"
+                        alt="Михаил Ермаков"
+                      />
+                    </picture>
                     <div class="work__overlay main-animated">
                       Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
                       для цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -197,13 +359,37 @@
               <a class="work__link main-animated" href="">
                 <article>
                   <div class="work__header">
-                    <img
-                      class="image"
-                      src="./images/portfolio/project-6-min.jpg"
-                      width="370"
-                      height="294"
-                      alt="Inspiration has no Borders"
-                    />
+                    <picture>
+                      <source
+                        srcset="./images/portfolio/project-6-min.jpg 1x, ./images/portfolio/project-5@2-min.jpg 2x"
+                        media="(min-width: 1200px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/project-5-min_tablet.png   1x,
+                          ./images/portfolio/project-5@2-min_tablet.png 2x
+                        "
+                        media="(min-width: 768px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/project-4-min_mobile.jpg   1x,
+                          ./images/portfolio/project-3@2-min_mobile.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                        type="image/jpeg"
+                      />
+
+                      <img
+                        class="image"
+                        src="./images/portfolio/project-6-min.jpg"
+                        width="370"
+                        height="294"
+                        alt="Михаил Ермаков"
+                      />
+                    </picture>
                     <div class="work__overlay main-animated">
                       Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
                       для цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -220,13 +406,37 @@
               <a class="work__link main-animated" href="">
                 <article>
                   <div class="work__header">
-                    <img
-                      class="image"
-                      src="./images/portfolio/project-7-min.jpg"
-                      width="370"
-                      height="294"
-                      alt="Издание Limited Edition"
-                    />
+                    <picture>
+                      <source
+                        srcset="./images/portfolio/project-7-min.jpg 1x, ./images/portfolio/project-6@2-min.jpg 2x"
+                        media="(min-width: 1200px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/project-6-min_tablet.png   1x,
+                          ./images/portfolio/project-6@2-min_tablet.png 2x
+                        "
+                        media="(min-width: 768px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/project-5-min_mobile.jpg   1x,
+                          ./images/portfolio/project-4@2-min_mobile.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                        type="image/jpeg"
+                      />
+
+                      <img
+                        class="image"
+                        src="./images/portfolio/project-7-min.jpg"
+                        width="370"
+                        height="294"
+                        alt="Михаил Ермаков"
+                      />
+                    </picture>
                     <div class="work__overlay main-animated">
                       Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
                       для цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -243,13 +453,37 @@
               <a class="work__link main-animated" href="">
                 <article>
                   <div class="work__header">
-                    <img
-                      class="image"
-                      src="./images/portfolio/project-8-min.jpg"
-                      width="370"
-                      height="294"
-                      alt="Проект LAB"
-                    />
+                    <picture>
+                      <source
+                        srcset="./images/portfolio/project-8-min.jpg 1x, ./images/portfolio/project-7@2-min.jpg 2x"
+                        media="(min-width: 1200px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/project-7-min_tablet.png   1x,
+                          ./images/portfolio/project-7@2-min_tablet.png 2x
+                        "
+                        media="(min-width: 768px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/project-6-min_mobile.jpg   1x,
+                          ./images/portfolio/project-5@2-min_mobile.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                        type="image/jpeg"
+                      />
+
+                      <img
+                        class="image"
+                        src="./images/portfolio/project-8-min.jpg"
+                        width="370"
+                        height="294"
+                        alt="Михаил Ермаков"
+                      />
+                    </picture>
                     <div class="work__overlay main-animated">
                       Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
                       для цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -266,13 +500,37 @@
               <a class="work__link main-animated" href="">
                 <article>
                   <div class="work__header">
-                    <img
-                      class="image"
-                      src="./images/portfolio/project-9-min.jpg"
-                      width="370"
-                      height="294"
-                      alt="Growing Business"
-                    />
+                    <picture>
+                      <source
+                        srcset="./images/portfolio/project-9-min.jpg 1x, ./images/portfolio/project-8@2-min.jpg 2x"
+                        media="(min-width: 1200px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/project-8-min_tablet.png   1x,
+                          ./images/portfolio/project-8@2-min_tablet.png 2x
+                        "
+                        media="(min-width: 768px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/project-7-min_mobile.jpg   1x,
+                          ./images/portfolio/project-6@2-min_mobile.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                        type="image/jpeg"
+                      />
+
+                      <img
+                        class="image"
+                        src="./images/portfolio/project-9-min.jpg"
+                        width="370"
+                        height="294"
+                        alt="Михаил Ермаков"
+                      />
+                    </picture>
                     <div class="work__overlay main-animated">
                       Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
                       для цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -291,7 +549,7 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <ul class="grid list">
+        <ul class="footer__grid grid list">
           <li class="footer__item grid__item">
             <a href="./index.html" class="logo logo--white"><span class="accent">Web</span>Studio</a>
             <address class="footer__contacs">
@@ -363,5 +621,7 @@
         </ul>
       </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

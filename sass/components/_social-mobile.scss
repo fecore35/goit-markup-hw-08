@@ -1,0 +1,23 @@
+.mobile-menu__social {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 64px;
+}
+
+.mobile-menu__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--color-accent);
+  display: block;
+
+  .mobile-menu__item:not(:first-child) & {
+    padding-left: 10px;
+  }
+
+  .mobile-menu__item:not(:last-child) & {
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+}

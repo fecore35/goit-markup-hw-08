@@ -1,9 +1,14 @@
+.clients__grid {
+  justify-content: center;
+}
+
 .clients__item {
-  --grid-item: 6;
+  --grid-item: 2;
 }
 
 .client__link {
   display: flex;
+  justify-content: center;
   color: #afb1b8;
   box-shadow: 0 0 0 1px #afb1b8;
   box-sizing: border-box;
@@ -14,5 +19,17 @@
   &:focus {
     box-shadow: 0 0 0 1px var(--color-accent);
     color: var(--color-accent);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients__item {
+    --grid-item: 3;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    --grid-item: 6;
   }
 }

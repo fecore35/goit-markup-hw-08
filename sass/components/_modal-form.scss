@@ -90,7 +90,7 @@
 .input__label--checkbox {
   cursor: pointer;
   position: relative;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   margin-top: 20px;
   display: flex;
@@ -116,7 +116,7 @@
   height: 15px;
   border-radius: 2px;
   border: 2px solid #212121;
-  margin-right: 10px;
+  margin-right: 8px;
 
   .form__checkbox:focus + & {
     box-shadow: 0 0 0 1px var(--color-accent);
@@ -139,4 +139,14 @@
   padding-left: 55px;
   padding-right: 55px;
   transition-property: background-color;
+}
+
+@media screen and(min-width: 1200px) {
+  .input__label--checkbox {
+    font-size: 14px;
+  }
+
+  .form__checkbox-icon {
+    margin-right: 10px;
+  }
 }

@@ -1,9 +1,6 @@
 .features {
   padding-top: var(--padding-section);
-}
-
-.features__item {
-  --grid-item: 4;
+  padding-bottom: var(--padding-section);
 }
 
 .features__title {
@@ -37,4 +34,20 @@
   font-size: 14px;
   line-height: 1.714;
   margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .features__item {
+    --grid-item: 2;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-bottom: 0;
+  }
+
+  .features__item {
+    --grid-item: 4;
+  }
 }
